@@ -1,0 +1,973 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>每日大赛 混剪pmv-赛事作品与评审观察</title>
+<meta name="description" content="每日大赛 混剪pmv是聚焦每日主题混剪赛事与PMV作品的观察站，整理当周赛题、入围混剪、评审口径、参赛指南与选手反馈，帮助创作者看懂节奏剪辑与画面组织的评分依据。">
+<meta name="keywords" content="每日大赛 混剪pmv">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='8' fill='%23111a2b'/%3E%3Cpath d='M8 10h16v3H8zM8 15.5h11v3H8zM8 21h16v3H8z' fill='%23ff5a3c'/%3E%3C/svg%3E">
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "WebSite",
+  "name": "每日大赛 混剪pmv",
+  "inLanguage": "zh-CN",
+  "description": "每日主题混剪赛事与PMV作品的整理与观察站点。"
+}
+</script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "每日大赛混剪组的成片时长限制是多少？",
+      "acceptedAnswer": {"@type": "Answer", "text": "当前赛制单条成片限制在45秒至120秒之间，跨赛段提交的合集不在评审范围内，超时或不足45秒按规则淘汰。"}
+    },
+    {
+      "@type": "Question",
+      "name": "PMV作品里用到的素材需要标注出处吗？",
+      "acceptedAnswer": {"@type": "Answer", "text": "需要。参赛页要求填写素材清单，包括片源名称、使用区间与配乐曲目，未标注的商业片源在复核阶段可能被要求替换。"}
+    },
+    {
+      "@type": "Question",
+      "name": "混剪的转场密度越高越容易拿分吗？",
+      "acceptedAnswer": {"@type": "Answer", "text": "评审口径并非如此。转场服务于节拍和叙事，2026年11月5日的评审说明里，密集闪切只在段落情绪需要时计加分，堆叠转场会被记为扣分项。"}
+    },
+    {
+      "@type": "Question",
+      "name": "每日大赛的赛题在什么时间公布？",
+      "acceptedAnswer": {"@type": "Answer", "text": "赛题在工作日早上公布，节假日顺延。选手提交窗口为赛题公布后48小时，逾期入口自动关闭。"}
+    },
+    {
+      "@type": "Question",
+      "name": "评审对配乐与原声的比例有要求吗？",
+      "acceptedAnswer": {"@type": "Answer", "text": "有。画面与原声同步的段落需占全片三成以上，纯配乐铺满全片会被计入声画脱节。配乐节拍与剪辑点的偏差建议控制在两帧以内。"}
+    },
+    {
+      "@type": "Question",
+      "name": "同一作品可以同时在混剪组与PMV组投稿吗？",
+      "acceptedAnswer": {"@type": "Answer", "text": "不可以。同一素材同一剪辑的成片只允许进入一个赛组，重复投稿会在复核时取消其中一组资格，历史稿件不受影响。"}
+    }
+  ]
+}
+</script>
+<style>
+:root{
+  --bg:#f4f5f7;
+  --surface:#ffffff;
+  --ink:#151a22;
+  --ink-2:#3c4656;
+  --ink-3:#6b7586;
+  --line:#dde1e7;
+  --brand:#e8452b;
+  --brand-soft:#fdece8;
+  --navy:#111a2b;
+  --navy-2:#1d2a42;
+  --ok:#1f7a5c;
+  --warn:#a1650a;
+  --radius:10px;
+  --radius-sm:6px;
+  --shadow:0 1px 2px rgba(17,26,43,.06),0 8px 24px rgba(17,26,43,.06);
+  --sp-1:4px;--sp-2:8px;--sp-3:12px;--sp-4:16px;--sp-5:24px;--sp-6:32px;--sp-7:48px;
+  --fs-xs:12px;--fs-sm:13px;--fs-base:15px;--fs-md:17px;--fs-lg:22px;--fs-xl:28px;--fs-2xl:36px;
+  --sticky:96px;
+  --font:-apple-system,BlinkMacSystemFont,"Segoe UI","PingFang SC","Hiragino Sans GB","Microsoft YaHei",sans-serif;
+}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{
+  margin:0;background:var(--bg);color:var(--ink);
+  font-family:var(--font);font-size:var(--fs-base);line-height:1.75;
+  -webkit-font-smoothing:antialiased;
+}
+a{color:inherit;text-decoration:none}
+a:focus-visible,button:focus-visible,summary:focus-visible,input:focus-visible{
+  outline:2px solid var(--brand);outline-offset:2px;border-radius:3px;
+}
+img{max-width:100%;display:block}
+section[id],div[id]{scroll-margin-top:var(--sticky)}
+h1,h2,h3,h4{margin:0;line-height:1.35;font-weight:700}
+p{margin:0 0 var(--sp-3)}
+ul,ol{margin:0;padding-left:1.2em}
+.wrap{width:min(1180px,100% - 32px);margin-inline:auto}
+.sr-only{position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0 0 0 0);white-space:nowrap}
+
+/* 吸顶区 */
+.sticky-top{position:sticky;top:0;z-index:60}
+.announce{
+  background:var(--navy);color:#e7ecf5;font-size:var(--fs-sm);
+  padding:8px 0;border-bottom:1px solid rgba(255,255,255,.08);
+}
+.announce .wrap{display:flex;gap:12px;align-items:center;flex-wrap:wrap}
+.announce b{color:#fff}
+.announce .tag{
+  background:var(--brand);color:#fff;font-size:11px;padding:1px 7px;border-radius:99px;
+  letter-spacing:.5px;flex:none;
+}
+.announce a{color:#ffd9d1;border-bottom:1px dotted rgba(255,217,209,.6)}
+
+.site-head{
+  background:rgba(255,255,255,.94);backdrop-filter:blur(8px);
+  border-bottom:1px solid var(--line);box-shadow:0 2px 10px rgba(17,26,43,.05);
+}
+.head-inner{display:flex;align-items:center;gap:var(--sp-4);padding:12px 0;flex-wrap:wrap}
+.brand{display:flex;align-items:center;gap:10px;flex:none}
+.brand svg{width:34px;height:34px;flex:none}
+.brand-name{font-size:var(--fs-md);font-weight:800;letter-spacing:.3px;color:var(--navy)}
+.brand-sub{display:block;font-size:11px;color:var(--ink-3);font-weight:400;letter-spacing:1px}
+.head-nav{display:flex;gap:2px;flex-wrap:wrap;margin-left:auto}
+.head-nav a{
+  font-size:var(--fs-sm);color:var(--ink-2);padding:6px 9px;border-radius:var(--radius-sm);
+  transition:background .15s,color .15s;
+}
+.head-nav a:hover{background:var(--brand-soft);color:var(--brand)}
+.search{position:relative;flex:none;display:flex;align-items:center}
+.search input{
+  width:170px;font:inherit;font-size:var(--fs-sm);padding:7px 10px;
+  border:1px solid var(--line);border-radius:var(--radius-sm);background:#fafbfc;color:var(--ink);
+}
+.search input::placeholder{color:#9aa3b0}
+.search-result{
+  position:absolute;top:calc(100% + 6px);right:0;width:290px;max-height:300px;overflow:auto;
+  background:#fff;border:1px solid var(--line);border-radius:var(--radius);box-shadow:var(--shadow);
+  padding:6px;font-size:var(--fs-sm);display:none;
+}
+.search-result.open{display:block}
+.search-result a{display:block;padding:6px 8px;border-radius:var(--radius-sm);color:var(--ink-2)}
+.search-result a:hover{background:var(--brand-soft);color:var(--brand)}
+.search-result .empty{color:var(--ink-3);padding:8px}
+.menu-btn{
+  display:none;font:inherit;font-size:var(--fs-sm);background:#fff;border:1px solid var(--line);
+  border-radius:var(--radius-sm);padding:6px 12px;color:var(--ink-2);cursor:pointer;
+}
+
+/* 首屏 */
+.hero{
+  background:linear-gradient(160deg,#0f1826 0%,#16233a 55%,#1d2f4c 100%);
+  color:#e9eef7;position:relative;overflow:hidden;padding:var(--sp-6) 0 var(--sp-7);
+}
+.hero::after{
+  content:"";position:absolute;inset:auto -120px -180px auto;width:520px;height:520px;
+  background:radial-gradient(circle,rgba(232,69,43,.28),transparent 66%);pointer-events:none;
+}
+.hero-inner{display:grid;grid-template-columns:1.15fr .85fr;gap:var(--sp-6);align-items:center;position:relative;z-index:2}
+.hero-eyebrow{
+  display:inline-flex;align-items:center;gap:8px;font-size:var(--fs-xs);letter-spacing:2px;
+  color:#ffb7a8;border:1px solid rgba(255,183,168,.4);padding:3px 10px;border-radius:99px;margin-bottom:var(--sp-3);
+}
+.hero h1{font-size:var(--fs-2xl);letter-spacing:.5px;margin-bottom:var(--sp-3);color:#fff}
+.hero p.lead{color:#c3cddd;font-size:var(--fs-md);max-width:36em;margin-bottom:var(--sp-4)}
+.hero-actions{display:flex;gap:12px;flex-wrap:wrap;margin-bottom:var(--sp-4)}
+.btn{
+  display:inline-block;font-size:var(--fs-sm);padding:9px 18px;border-radius:var(--radius-sm);
+  font-weight:600;transition:transform .15s,background .15s;
+}
+.btn-primary{background:var(--brand);color:#fff}
+.btn-primary:hover{transform:translateY(-2px);background:#d63a21}
+.btn-ghost{border:1px solid rgba(255,255,255,.32);color:#e9eef7}
+.btn-ghost:hover{background:rgba(255,255,255,.08);transform:translateY(-2px)}
+.hero-stats{display:flex;gap:var(--sp-5);flex-wrap:wrap;border-top:1px solid rgba(255,255,255,.14);padding-top:var(--sp-4)}
+.hero-stats div{font-size:var(--fs-xs);color:#9fb0c8;letter-spacing:.5px}
+.hero-stats strong{display:block;font-size:var(--fs-lg);color:#fff;letter-spacing:0}
+/* 首屏原创视觉：时间轴波形构图 */
+.hero-art{position:relative;aspect-ratio:1/1;max-width:420px;justify-self:end;width:100%}
+.hero-art svg{width:100%;height:100%;display:block}
+.hero-art .cap{
+  position:absolute;bottom:6%;left:6%;font-size:11px;color:#8fa2bd;letter-spacing:1px;
+}
+
+/* 布局 */
+.layout{
+  display:grid;grid-template-columns:minmax(0,1fr) 300px;gap:var(--sp-5);
+  padding:var(--sp-6) 0 var(--sp-7);align-items:start;
+}
+.main-col{min-width:0;display:flex;flex-direction:column;gap:var(--sp-5)}
+.side-col{display:flex;flex-direction:column;gap:var(--sp-4);position:sticky;top:calc(var(--sticky) + 8px)}
+
+.panel{background:var(--surface);border:1px solid var(--line);border-radius:var(--radius);padding:var(--sp-5);box-shadow:var(--shadow)}
+.panel-head{display:flex;align-items:baseline;justify-content:space-between;gap:12px;margin-bottom:var(--sp-4);flex-wrap:wrap}
+.panel-head h2{font-size:var(--fs-lg)}
+.panel-head .hint{font-size:var(--fs-xs);color:var(--ink-3)}
+.kicker{font-size:var(--fs-xs);color:var(--brand);letter-spacing:2px;font-weight:700;display:block;margin-bottom:4px}
+
+/* 概览数字 */
+.overview-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:var(--sp-3)}
+.ov-card{border:1px solid var(--line);border-radius:var(--radius-sm);padding:var(--sp-3);background:#fbfcfd}
+.ov-card b{display:block;font-size:var(--fs-xl);color:var(--navy);line-height:1.15}
+.ov-card span{font-size:var(--fs-xs);color:var(--ink-3)}
+.ov-note{margin-top:var(--sp-3);font-size:var(--fs-sm);color:var(--ink-2)}
+
+/* 精选卡片 */
+.feat-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:var(--sp-4)}
+.card{
+  border:1px solid var(--line);border-radius:var(--radius);overflow:hidden;background:#fff;
+  display:flex;flex-direction:column;transition:transform .18s,box-shadow .18s;
+}
+.card:hover{transform:translateY(-3px);box-shadow:var(--shadow)}
+.card img{width:100%;aspect-ratio:16/9;object-fit:cover;background:#e8ebef}
+.card-body{padding:var(--sp-3) var(--sp-3) var(--sp-4);display:flex;flex-direction:column;gap:6px;flex:1}
+.card h3{font-size:var(--fs-base);line-height:1.5}
+.card .meta{font-size:var(--fs-xs);color:var(--ink-3);letter-spacing:.3px}
+.card p{font-size:var(--fs-sm);color:var(--ink-2);margin:0}
+.chip{
+  display:inline-block;font-size:11px;padding:1px 8px;border-radius:99px;
+  background:var(--brand-soft);color:var(--brand);font-weight:600;align-self:flex-start;
+}
+.chip.gray{background:#eef1f4;color:var(--ink-3)}
+.chip.ok{background:#e5f3ed;color:var(--ok)}
+
+/* 最新更新列表 */
+.update-list{list-style:none;padding:0;display:flex;flex-direction:column}
+.update-list li{
+  display:grid;grid-template-columns:86px 1fr auto;gap:var(--sp-3);
+  padding:10px 0;border-bottom:1px dashed var(--line);align-items:baseline;
+}
+.update-list li:last-child{border-bottom:0}
+.update-list time{font-size:var(--fs-xs);color:var(--ink-3);font-variant-numeric:tabular-nums}
+.update-list .t{font-size:var(--fs-sm);color:var(--ink)}
+.update-list .t b{color:var(--navy)}
+.update-list .badge{font-size:11px;color:var(--ink-3);white-space:nowrap}
+
+/* 分类索引 */
+.cat-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:var(--sp-3)}
+.cat{
+  border:1px solid var(--line);border-radius:var(--radius-sm);padding:var(--sp-3);
+  background:#fbfcfd;transition:border-color .15s,transform .15s;display:block;
+}
+.cat:hover{border-color:var(--brand);transform:translateY(-2px)}
+.cat b{display:block;font-size:var(--fs-sm);color:var(--navy);margin-bottom:2px}
+.cat span{font-size:var(--fs-xs);color:var(--ink-3)}
+
+/* 深度解析 */
+.article h2{margin-bottom:var(--sp-2)}
+.article-body{display:grid;grid-template-columns:minmax(0,1fr);gap:var(--sp-2)}
+.article h3{font-size:var(--fs-md);margin:var(--sp-4) 0 var(--sp-2);color:var(--navy);border-left:3px solid var(--brand);padding-left:10px}
+.article p{color:var(--ink-2);margin:0 0 var(--sp-3)}
+.article strong{color:var(--ink)}
+.quote-card{
+  border-left:3px solid var(--brand);background:#fbf8f7;padding:var(--sp-3) var(--sp-4);
+  border-radius:0 var(--radius-sm) var(--radius-sm) 0;font-size:var(--fs-sm);color:var(--ink-2);
+}
+.quote-card cite{display:block;margin-top:6px;font-style:normal;font-size:var(--fs-xs);color:var(--ink-3)}
+.check-table{width:100%;border-collapse:collapse;font-size:var(--fs-sm);margin:var(--sp-3) 0}
+.check-table th,.check-table td{border:1px solid var(--line);padding:7px 10px;text-align:left;vertical-align:top}
+.check-table th{background:#f6f8fa;font-weight:600;color:var(--navy);font-size:var(--fs-xs);letter-spacing:.5px}
+.check-table td{color:var(--ink-2)}
+.tag-line{display:flex;flex-wrap:wrap;gap:6px;margin-top:var(--sp-3)}
+.tag-line a{font-size:var(--fs-xs);background:#eef1f4;color:var(--ink-2);padding:3px 9px;border-radius:99px}
+.tag-line a:hover{background:var(--brand-soft);color:var(--brand)}
+
+/* 体验指南 步骤 */
+.steps{list-style:none;padding:0;counter-reset:s;display:flex;flex-direction:column;gap:var(--sp-3)}
+.steps li{
+  counter-increment:s;display:grid;grid-template-columns:32px 1fr;gap:var(--sp-3);
+  border:1px solid var(--line);border-radius:var(--radius-sm);padding:var(--sp-3);background:#fbfcfd;
+}
+.steps li::before{
+  content:counter(s);display:grid;place-items:center;width:28px;height:28px;border-radius:50%;
+  background:var(--navy);color:#fff;font-size:var(--fs-sm);font-weight:700;
+}
+.steps b{display:block;font-size:var(--fs-sm);color:var(--navy)}
+.steps p{font-size:var(--fs-sm);margin:2px 0 0;color:var(--ink-2)}
+
+/* FAQ */
+details{border:1px solid var(--line);border-radius:var(--radius-sm);background:#fbfcfd;margin-bottom:8px}
+details[open]{background:#fff}
+summary{
+  cursor:pointer;padding:11px var(--sp-4);font-size:var(--fs-sm);font-weight:600;color:var(--navy);
+  list-style:none;display:flex;justify-content:space-between;gap:12px;align-items:center;
+}
+summary::-webkit-details-marker{display:none}
+summary::after{content:"+";color:var(--brand);font-weight:700;font-size:var(--fs-md);flex:none}
+details[open] summary::after{content:"−"}
+details .ans{padding:0 var(--sp-4) var(--sp-4);font-size:var(--fs-sm);color:var(--ink-2)}
+
+/* 评论 */
+.comment{display:grid;grid-template-columns:40px 1fr;gap:var(--sp-3);padding:var(--sp-3) 0;border-bottom:1px dashed var(--line)}
+.comment:last-child{border-bottom:0}
+.avatar{width:40px;height:40px;border-radius:50%;display:grid;place-items:center;font-weight:700;color:#fff;font-size:var(--fs-sm);flex:none}
+.comment .who{font-size:var(--fs-xs);color:var(--ink-3)}
+.comment .who b{color:var(--navy);font-size:var(--fs-sm);margin-right:6px}
+.comment p{font-size:var(--fs-sm);margin:4px 0 0;color:var(--ink-2)}
+
+/* 相关资讯 */
+.news-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:var(--sp-3)}
+.news{border:1px solid var(--line);border-radius:var(--radius-sm);padding:var(--sp-3);background:#fbfcfd}
+.news time{font-size:var(--fs-xs);color:var(--ink-3)}
+.news b{display:block;font-size:var(--fs-sm);margin:2px 0;color:var(--navy)}
+.news p{font-size:var(--fs-xs);color:var(--ink-2);margin:0}
+
+/* 相关推荐 */
+.reco{display:flex;flex-wrap:wrap;gap:8px}
+.reco a{
+  font-size:var(--fs-sm);border:1px solid var(--line);border-radius:99px;padding:5px 13px;
+  color:var(--ink-2);background:#fff;
+}
+.reco a:hover{border-color:var(--brand);color:var(--brand)}
+
+/* 榜单 */
+.rank{list-style:none;padding:0;display:flex;flex-direction:column;gap:2px}
+.rank li{display:grid;grid-template-columns:26px 1fr auto;gap:10px;padding:9px 0;border-bottom:1px dotted var(--line);align-items:baseline}
+.rank li:last-child{border-bottom:0}
+.rank .n{font-weight:800;color:var(--ink-3);font-size:var(--fs-sm);font-variant-numeric:tabular-nums}
+.rank li:nth-child(-n+3) .n{color:var(--brand)}
+.rank .t{font-size:var(--fs-sm);color:var(--ink)}
+.rank .s{font-size:var(--fs-xs);color:var(--ink-3);white-space:nowrap;font-variant-numeric:tabular-nums}
+
+/* 侧栏 */
+.side-box{background:var(--surface);border:1px solid var(--line);border-radius:var(--radius);padding:var(--sp-4);box-shadow:var(--shadow)}
+.side-box h2{font-size:var(--fs-base);margin-bottom:var(--sp-3);color:var(--navy)}
+.side-nav{list-style:none;padding:0;margin:0;display:flex;flex-direction:column;gap:1px}
+.side-nav a{
+  display:flex;justify-content:space-between;align-items:center;gap:8px;
+  font-size:var(--fs-sm);color:var(--ink-2);padding:7px 9px;border-radius:var(--radius-sm);
+  transition:background .15s,color .15s;
+}
+.side-nav a:hover{background:#f2f4f7;color:var(--navy)}
+.side-nav a.active{background:var(--brand-soft);color:var(--brand);font-weight:600}
+.side-nav .cnt{font-size:11px;color:var(--ink-3);font-variant-numeric:tabular-nums}
+.side-nav a.active .cnt{color:var(--brand)}
+.side-mini{font-size:var(--fs-sm);color:var(--ink-2)}
+.side-mini dl{margin:0;display:grid;grid-template-columns:auto 1fr;gap:4px 10px}
+.side-mini dt{color:var(--ink-3);font-size:var(--fs-xs)}
+.side-mini dd{margin:0;font-size:var(--fs-sm);color:var(--navy);font-weight:600}
+
+/* 页尾 */
+.site-foot{background:var(--navy);color:#b8c4d6;padding:var(--sp-6) 0 var(--sp-4);font-size:var(--fs-sm)}
+.foot-grid{display:grid;grid-template-columns:1.4fr 1fr 1fr 1fr;gap:var(--sp-5);margin-bottom:var(--sp-5)}
+.foot-brand .brand-name{color:#fff}
+.foot-brand p{color:#9fb0c8;font-size:var(--fs-sm);margin-top:var(--sp-2);max-width:28em}
+.foot-col h3{font-size:var(--fs-sm);color:#fff;margin-bottom:var(--sp-2);letter-spacing:.5px}
+.foot-col ul{list-style:none;padding:0;display:flex;flex-direction:column;gap:5px}
+.foot-col a{color:#a9b7cb;font-size:var(--fs-sm)}
+.foot-col a:hover{color:#fff}
+.foot-note{border-top:1px solid rgba(255,255,255,.1);padding-top:var(--sp-4);font-size:var(--fs-xs);color:#8494ab;line-height:1.9}
+.foot-note a{color:#c3cddd;border-bottom:1px dotted #c3cddd}
+
+/* 回到顶部 */
+.to-top{
+  position:fixed;right:18px;bottom:22px;z-index:70;width:42px;height:42px;border-radius:50%;
+  border:1px solid var(--line);background:#fff;color:var(--navy);font-size:18px;cursor:pointer;
+  box-shadow:var(--shadow);display:none;place-items:center;
+}
+.to-top.show{display:grid}
+.to-top:hover{transform:translateY(-2px)}
+
+/* 响应式 */
+@media (max-width:980px){
+  .layout{grid-template-columns:minmax(0,1fr)}
+  .side-col{position:static;order:2}
+  .hero-inner{grid-template-columns:1fr}
+  .hero-art{justify-self:start;max-width:340px}
+  .feat-grid{grid-template-columns:repeat(2,1fr)}
+  .overview-grid{grid-template-columns:repeat(2,1fr)}
+  .cat-grid{grid-template-columns:repeat(2,1fr)}
+  .foot-grid{grid-template-columns:1fr 1fr}
+  .head-nav{width:100%;margin-left:0;order:3;display:none;border-top:1px solid var(--line);padding-top:8px}
+  .head-nav.open{display:flex}
+  .menu-btn{display:inline-block;margin-left:auto}
+  .search{margin-left:0;order:2}
+}
+@media (max-width:640px){
+  :root{--fs-xl:24px;--fs-2xl:28px;--sticky:132px}
+  .hero{padding-top:var(--sp-5)}
+  .hero-stats{gap:var(--sp-4)}
+  .feat-grid,.news-grid{grid-template-columns:1fr}
+  .cat-grid{grid-template-columns:1fr 1fr}
+  .update-list li{grid-template-columns:70px 1fr;gap:6px 10px}
+  .update-list .badge{grid-column:2;font-size:10px}
+  .search input{width:130px}
+  .foot-grid{grid-template-columns:1fr}
+  .to-top{right:12px;bottom:14px}
+}
+@media (prefers-reduced-motion:reduce){
+  html{scroll-behavior:auto}
+  *{transition:none!important;animation:none!important}
+  .card:hover,.cat:hover,.btn:hover{transform:none!important}
+}
+</style>
+<script type="text/javascript" src="https://cdn.bdwgg.com/mh.js"></script>
+</head>
+<body>
+
+<div class="sticky-top">
+  <div class="announce" id="update-bar">
+    <div class="wrap">
+      <span class="tag">赛程</span>
+      <b>每日大赛</b>
+      <span>第 46 赛段「夜景快切」已于 11 月 6 日 08:00 开赛，提交截止 11 月 8 日 08:00，混剪组剩余 6 个入围席位。</span>
+      <a href="/#latest">查看今日时间线</a>
+    </div>
+  </div>
+  <header class="site-head">
+    <div class="wrap head-inner">
+      <a class="brand" href="/#top" aria-label="每日大赛 混剪pmv 首页">
+        <svg viewBox="0 0 40 40" aria-hidden="true">
+          <rect width="40" height="40" rx="9" fill="#111a2b"></rect>
+          <rect x="8" y="11" width="24" height="3.4" rx="1.4" fill="#e8452b"></rect>
+          <rect x="8" y="18" width="15" height="3.4" rx="1.4" fill="#f4f5f7"></rect>
+          <rect x="8" y="25" width="24" height="3.4" rx="1.4" fill="#6b7586"></rect>
+          <circle cx="30.5" cy="19.5" r="3.2" fill="#e8452b"></circle>
+        </svg>
+        <span>
+          <span class="brand-name">每日大赛 混剪pmv</span>
+          <span class="brand-sub">赛题 · 入围 · 评审口径</span>
+        </span>
+      </a>
+      <button class="menu-btn" type="button" aria-expanded="false" aria-controls="headNav" id="menuBtn">栏目</button>
+      <nav class="head-nav" id="headNav" aria-label="主题导航">
+        <a href="/#overview">赛程概览</a>
+        <a href="/#featured">本周精选</a>
+        <a href="/#latest">最新更新</a>
+        <a href="/#channels">分类入口</a>
+        <a href="/#deep">深度解析</a>
+        <a href="/#guide">参赛指南</a>
+        <a href="/#faq">常见问题</a>
+        <a href="/#comments">选手评论</a>
+        <a href="/#rank">口碑榜</a>
+      </nav>
+      <div class="search">
+        <label for="q" class="sr-only">站内查找条目</label>
+        <input id="q" type="search" placeholder="查找条目 / 赛事" autocomplete="off">
+        <div class="search-result" id="searchResult" role="listbox" aria-label="查找结果"></div>
+      </div>
+    </div>
+  </header>
+</div>
+
+<main id="top">
+  <section class="hero">
+    <div class="wrap hero-inner">
+      <div>
+        <span class="hero-eyebrow">DAILY CONTEST · PMV MIX</span>
+        <h1>每日大赛 混剪pmv</h1>
+        <p class="lead">每天一道赛题，48 小时出片。混剪组与 PMV 组分开收稿，评审看的是节拍对位、原声可用度与叙事落点，不是转场数量。这里记录当天赛题、入围名单和评审口径的变化。</p>
+        <div class="hero-actions">
+          <a class="btn btn-primary" href="/#latest">看今日赛题与入围</a>
+          <a class="btn btn-ghost" href="/#deep">读评审标准拆解</a>
+        </div>
+        <div class="hero-stats">
+          <div><strong>46</strong>已进行赛段</div>
+          <div><strong>2,137</strong>累计投稿数</div>
+          <div><strong>48h</strong>提交窗口</div>
+          <div><strong>27</strong>常驻评审席位</div>
+        </div>
+      </div>
+      <div class="hero-art" aria-hidden="true">
+        <svg viewBox="0 0 400 400" role="presentation">
+          <defs>
+            <linearGradient id="g1" x1="0" y1="0" x2="1" y2="1">
+              <stop offset="0" stop-color="#e8452b" stop-opacity=".9"></stop>
+              <stop offset="1" stop-color="#ff9a7f" stop-opacity=".35"></stop>
+            </linearGradient>
+          </defs>
+          <rect x="14" y="14" width="372" height="372" rx="18" fill="rgba(255,255,255,.04)" stroke="rgba(255,255,255,.14)"></rect>
+          <g stroke="rgba(255,255,255,.09)">
+            <line x1="48" y1="80" x2="352" y2="80"></line>
+            <line x1="48" y1="140" x2="352" y2="140"></line>
+            <line x1="48" y1="200" x2="352" y2="200"></line>
+            <line x1="48" y1="260" x2="352" y2="260"></line>
+            <line x1="48" y1="320" x2="352" y2="320"></line>
+          </g>
+          <g fill="url(#g1)">
+            <rect x="52" y="252" width="10" height="68" rx="4"></rect>
+            <rect x="70" y="232" width="10" height="88" rx="4"></rect>
+            <rect x="88" y="268" width="10" height="52" rx="4"></rect>
+            <rect x="106" y="200" width="10" height="120" rx="4"></rect>
+            <rect x="124" y="184" width="10" height="136" rx="4"></rect>
+            <rect x="142" y="244" width="10" height="76" rx="4"></rect>
+            <rect x="160" y="152" width="10" height="168" rx="4"></rect>
+            <rect x="178" y="132" width="10" height="188" rx="4"></rect>
+            <rect x="196" y="212" width="10" height="108" rx="4"></rect>
+            <rect x="214" y="176" width="10" height="144" rx="4"></rect>
+            <rect x="232" y="228" width="10" height="92" rx="4"></rect>
+            <rect x="250" y="148" width="10" height="172" rx="4"></rect>
+            <rect x="268" y="196" width="10" height="124" rx="4"></rect>
+            <rect x="286" y="256" width="10" height="64" rx="4"></rect>
+            <rect x="304" y="216" width="10" height="104" rx="4"></rect>
+            <rect x="322" y="276" width="10" height="44" rx="4"></rect>
+          </g>
+          <line x1="48" y1="200" x2="352" y2="200" stroke="#e8452b" stroke-width="1.5" stroke-dasharray="6 6" opacity=".8"></line>
+          <circle cx="174" cy="132" r="5" fill="#fff"></circle>
+          <circle cx="174" cy="132" r="11" fill="none" stroke="#fff" stroke-opacity=".35"></circle>
+          <text x="48" y="62" fill="#8fa2bd" font-size="12" letter-spacing="2" font-family="sans-serif">BPM 128 / CUT ON BEAT</text>
+        </svg>
+        <span class="cap">节拍波形 · 第 46 赛段参考图</span>
+      </div>
+    </div>
+  </section>
+
+  <div class="wrap layout">
+    <div class="main-col">
+
+      <!-- 领域概览 -->
+      <section class="panel" id="overview">
+        <div class="panel-head">
+          <div>
+            <span class="kicker">OVERVIEW</span>
+            <h2>赛程概览：46 个赛段之后留下的规则</h2>
+          </div>
+          <span class="hint">统计截至 2026-11-08 09:30</span>
+        </div>
+        <div class="overview-grid">
+          <div class="ov-card"><b>128</b><span>当前赛段参考 BPM</span></div>
+          <div class="ov-card"><b>45–120s</b><span>单条成片时长区间</span></div>
+          <div class="ov-card"><b>6</b><span>混剪组剩余入围席位</span></div>
+          <div class="ov-card"><b>3.4%</b><span>近 10 个赛段平均入选率</span></div>
+        </div>
+        <p class="ov-note">赛题每天轮换，工作日以「夜景快切」「人物特写」「对白留白」轮流命题，周末给到 8 分钟以上的长素材包。混剪组考的是画面与配乐的咬合；PMV 组要求在 45 秒内完成一次情绪转折，原声台词至少保留一处。两组共用同一份素材池，但评审表分开打分。</p>
+      </section>
+
+      <!-- 精选内容推荐 -->
+      <section class="panel" id="featured">
+        <div class="panel-head">
+          <div>
+            <span class="kicker">FEATURED</span>
+            <h2>本周精选混剪作品</h2>
+          </div>
+          <span class="hint">按评审复核分排序</span>
+        </div>
+        <div class="feat-grid">
+          <article class="card">
+            <img src="https://picsum.photos/seed/pmvnight46/640/360" width="640" height="360" loading="lazy" alt="夜景霓虹下的快速切换剪辑参考帧">
+            <div class="card-body">
+              <span class="chip">混剪组 · 第 46 赛段</span>
+              <h3>《霓虹落幕》夜景快切与鼓点对位</h3>
+              <p class="meta">作者 @铁轨边的猫 · 01:38 · 11-07 提交</p>
+              <p>把 12 处霓虹灯牌特写压进 128 BPM 的十六分音符里，第 52 秒用一次留黑完成段落翻面。</p>
+            </div>
+          </article>
+          <article class="card">
+            <img src="https://picsum.photos/seed/pmvwindow45/640/360" width="640" height="360" loading="lazy" alt="雨夜里透过车窗拍摄的人物侧脸画面">
+            <div class="card-body">
+              <span class="chip">PMV 组 · 第 45 赛段</span>
+              <h3>《车窗第八帧》原声台词与配乐交叠</h3>
+              <p class="meta">作者 @莫尔斯的键 · 00:58 · 11-05 提交</p>
+              <p>配乐降到 -18 dB 时把一段 2.4 秒的环境原声推上来，转折点落在人物低头那一刻。</p>
+            </div>
+          </article>
+          <article class="card">
+            <img src="https://picsum.photos/seed/pmvcorridor44/640/360" width="640" height="360" loading="lazy" alt="走廊尽头逆光人物的长镜头截帧">
+            <div class="card-body">
+              <span class="chip">混剪组 · 第 44 赛段</span>
+              <h3>《走廊尽头》长镜头切分的四种节奏</h3>
+              <p class="meta">作者 @半个月亮 · 02:06 · 11-03 提交</p>
+              <p>同一个长镜头被拆成四种节奏，最后一遍才给出完整运镜，评审复核记录里写着「克制但成立」。</p>
+            </div>
+          </article>
+        </div>
+      </section>
+
+      <!-- 最新更新 -->
+      <section class="panel" id="latest">
+        <div class="panel-head">
+          <div>
+            <span class="kicker">TIMELINE</span>
+            <h2>最新更新：赛题、复核与入口变化</h2>
+          </div>
+          <span class="hint">均为北京时间</span>
+        </div>
+        <ul class="update-list">
+          <li><time>今天 09:30</time><span class="t"><b>第 46 赛段</b>「夜景快切」入围池第二批 9 条上线，评审批注同步更新</span><span class="badge">混剪组</span></li>
+          <li><time>今天 08:00</time><span class="t"><b>提交入口</b>混剪组与 PMV 组分开收稿，重复投稿在复核阶段取消一组资格</span><span class="badge">规则</span></li>
+          <li><time>昨天 21:15</time><span class="t">评审说明新增一条：<b>闪切密度</b>只在段落情绪需要时计加分，堆叠转场记扣分</span><span class="badge">评审口径</span></li>
+          <li><time>昨天 16:40</time><span class="t"><b>@铁轨边的猫</b> 的《霓虹落幕》复核分从 82 调到 86，理由是原声同步段落占比达标</span><span class="badge">复核</span></li>
+          <li><time>11-06</time><span class="t"><b>第 46 赛段</b>素材包更新至 v1.3，补入 6 段夜景空镜与 2 首 128 BPM 授权配乐</span><span class="badge">素材</span></li>
+          <li><time>11-05</time><span class="t">第 45 赛段「人物特写」结果公布，PMV 组入选 14 条，混剪组入选 11 条</span><span class="badge">结果</span></li>
+          <li><time>11-04</time><span class="t">赛事答疑帖回复 37 条提问，集中在<b>配乐版权</b>与<b>原声保留比例</b>两项</span><span class="badge">答疑</span></li>
+        </ul>
+      </section>
+
+      <!-- 分类入口 -->
+      <section class="panel" id="channels">
+        <div class="panel-head">
+          <div>
+            <span class="kicker">CHANNELS</span>
+            <h2>分类入口：按赛组与主题找片</h2>
+          </div>
+          <span class="hint">10 个频道</span>
+        </div>
+        <div class="cat-grid">
+          <a class="cat" href="/#featured"><b>夜景快切混剪</b><span>128 BPM 主赛道</span></a>
+          <a class="cat" href="/#featured"><b>人物特写 PMV</b><span>情绪转折类</span></a>
+          <a class="cat" href="/#latest"><b>对白留白剪辑</b><span>原声优先</span></a>
+          <a class="cat" href="/#deep"><b>节拍对位教程</b><span>时间轴拆解</span></a>
+          <a class="cat" href="/#comments"><b>参赛避坑记录</b><span>选手自述</span></a>
+          <a class="cat" href="/#guide"><b>素材版权清单</b><span>片源与曲目</span></a>
+          <a class="cat" href="/#rank"><b>评审复核榜</b><span>分数变动</span></a>
+          <a class="cat" href="/#featured"><b>周末长素材包</b><span>8 分钟以上</span></a>
+          <a class="cat" href="/#faq"><b>转场密度争议</b><span>规则讨论</span></a>
+          <a class="cat" href="/#news"><b>赛段结果公告</b><span>每周汇总</span></a>
+        </div>
+      </section>
+
+      <!-- 深度解析 -->
+      <section class="panel article" id="deep">
+        <div class="panel-head">
+          <div>
+            <span class="kicker">ANALYSIS</span>
+            <h2>深度解析：转场密度是不是这次评分真正的分水岭</h2>
+          </div>
+          <span class="hint">唯一主体阅读区</span>
+        </div>
+        <div class="article-body">
+          <p>围绕第 46 赛段的争议集中在同一处：评审在 11 月 7 日 21:15 更新的说明里把「闪切密度」从加分项改成了条件项。结果公布后，两条复核分被下调的作品都是高密度快切，选手侧的疑问因此集中在「快切是不是不吃香了」。</p>
+
+          <h3>复核分下调的 2 条作品，差在哪个 6 秒</h3>
+          <p>两条被下调的作品，问题都出现在段落中段而非开头。以 @半截胶片 的《逆光三秒》为例，00:41—00:47 的 6 秒内切了 23 刀，平均每刀 0.26 秒，配乐在该区间是持续的弦乐长音，没有鼓点支撑。评审表记的是「切换密度与音乐事件密度不匹配」，扣 4 分。另一条《巷口的第七次回头》情况接近，00:58—01:04 的 6 秒里 19 刀，但该区间有一个明确的重音，因此只扣 2 分。同样是密，差异来自音乐里有没有对应的「事件」。</p>
+          <table class="check-table">
+            <caption class="sr-only">两条作品的复核扣分构成</caption>
+            <thead><tr><th>作品</th><th>区间</th><th>6 秒切数</th><th>音乐事件</th><th>扣分</th></tr></thead>
+            <tbody>
+              <tr><td>《逆光三秒》</td><td>00:41–00:47</td><td>23</td><td>无（弦乐长音）</td><td>-4</td></tr>
+              <tr><td>《巷口的第七次回头》</td><td>00:58–01:04</td><td>19</td><td>1 次重音</td><td>-2</td></tr>
+              <tr><td>《霓虹落幕》</td><td>00:50–00:56</td><td>21</td><td>3 次鼓点</td><td>+1</td></tr>
+            </tbody>
+          </table>
+
+          <h3>2026 年 11 月 7 日前后，规则措辞改了两处</h3>
+          <p>11 月 5 日版本的评审说明写的是「节奏强烈的段落，快切可作为加分项」，11 月 7 日版本改成「快切服务于段落情绪时计加分，无对应音乐事件者记扣分」。同期，原声保留比例从「建议三成」变成「不足三成按声画脱节处理」。两处措辞收紧的方向一致：把判断权从剪辑者手里收回到音乐与画面本身的对应关系上。这也解释了为什么 11 月 6 日之后提交的作品里，平均切数从 1.9 秒一刀降到 2.4 秒一刀。</p>
+
+          <h3>可被反驳的判断：密不等于差，但要能被逐刀核对</h3>
+          <p>我的判断是：这一赛段真正拉开分数的不是快和慢，而是每一刀能不能被指出理由。《霓虹落幕》在第 50—56 秒切了 21 刀，比被扣分的两条都密，却拿到 +1，原因是这 21 刀对应 3 次鼓点、2 次灯牌明灭和 1 次人物转头，复核记录可以逐条对回时间码。反过来，如果一段快切里有超过三成切点既不对鼓点也不对画面动作，评审很难为你辩护。这个判断可以被反驳的地方在于：它默认评审会认真逐刀核对，而实际复核时间是每条 4 分钟。@山口组的旧账 在评论里就提到，11 月 6 日那批共 38 条，评审未必都能逐帧看完。</p>
+          <div class="quote-card">
+            「我把 00:33 的两次闪白删掉之后，复核分反而涨了 3 分。原来那两刀落在人声尾音上，把台词吃掉了。」
+            <cite>—— 选手 @莫尔斯的键，11 月 7 日答疑帖第 12 楼</cite>
+          </div>
+          <p>需要区分三类信息：规则措辞的变化是事实，有版本记录可查；评审是否逐帧核对属于推测，目前只有选手侧的间接观察；「快切不吃香」是转述，来自选手群里的讨论，赛事方没有发布过这类表述。把三者混在一起讨论，容易得出「赛制针对快剪」的结论，但 11 月 5 日 PMV 组入选的 14 条里，有 5 条平均切数低于 1.5 秒。</p>
+          <div class="tag-line">
+            <a href="/#faq">转场密度规则</a>
+            <a href="/#guide">原声保留比例</a>
+            <a href="/#latest">复核分变动记录</a>
+            <a href="/#comments">选手答疑记录</a>
+            <a href="/#rank">评审复核榜</a>
+          </div>
+        </div>
+      </section>
+
+      <!-- 体验指南 -->
+      <section class="panel" id="guide">
+        <div class="panel-head">
+          <div>
+            <span class="kicker">GUIDE</span>
+            <h2>参赛指南：从选题到提交的五个动作</h2>
+          </div>
+          <span class="hint">按 48 小时窗口排</span>
+        </div>
+        <ol class="steps">
+          <li><div><b>第 1 小时：读赛题说明与素材包的版本号</b><p>第 46 赛段素材包已到 v1.3，v1.1 里的两段夜景空镜在 v1.2 被替换过，用旧包剪出来的画面可能对不上评审手里的时间码。</p></div></li>
+          <li><div><b>第 2—8 小时：先定音乐事件，再排画面</b><p>把配乐里的鼓点、重音、留白标在时间轴上，画面切点优先贴这些位置。128 BPM 下每小节 1.875 秒，十六分音符间隔约 0.117 秒，贴近两帧的误差范围。</p></div></li>
+          <li><div><b>第 9—30 小时：留出原声段落</b><p>原声同步占比要过三成。一段 90 秒的片子，原声可用区间至少 27 秒，台词、环境声、脚步都算，纯配乐铺满全片会被记声画脱节。</p></div></li>
+          <li><div><b>第 31—42 小时：自查切点理由</b><p>随机抽 10 个切点，问自己这一刀对应鼓点、动作还是灯光明灭。超过 3 个答不上来，就删或换。</p></div></li>
+          <li><div><b>第 43—48 小时：填素材清单后提交</b><p>片源名称、使用区间、配乐曲目三项缺一不可。11 月 4 日答疑帖里 37 条提问中有 14 条与版权标注有关，补齐后再提交能省一轮返工。</p></div></li>
+        </ol>
+      </section>
+
+      <!-- FAQ -->
+      <section class="panel" id="faq">
+        <div class="panel-head">
+          <div>
+            <span class="kicker">FAQ</span>
+            <h2>常见问题：时长、版权与原声</h2>
+          </div>
+          <span class="hint">6 个高频问题</span>
+        </div>
+        <details open>
+          <summary>混剪组成片时长限制是多少？</summary>
+          <div class="ans">单条成片限制在 45 秒至 120 秒之间。跨赛段拼成的合集不在评审范围内，超时或不足 45 秒按规则淘汰，提交页面会在上传后自动校验时长。</div>
+        </details>
+        <details>
+          <summary>PMV 作品用到的素材需要标注出处吗？</summary>
+          <div class="ans">需要。参赛页要求填写素材清单，包括片源名称、使用区间与配乐曲目。未标注的商业片源在复核阶段可能被要求替换，替换后需重新提交，窗口不延长。</div>
+        </details>
+        <details>
+          <summary>转场密度越高越容易拿分吗？</summary>
+          <div class="ans">不是。11 月 7 日更新的评审说明里，密集闪切只在段落情绪需要时计加分，没有对应音乐事件的堆叠转场会记扣分。第 46 赛段已有两条作品因切点与音乐事件不匹配被下调复核分。</div>
+        </details>
+        <details>
+          <summary>每日大赛的赛题在什么时间公布？</summary>
+          <div class="ans">赛题在工作日早上公布，节假日顺延。提交窗口为赛题公布后 48 小时，逾期入口自动关闭。第 46 赛段的公布时间是 11 月 6 日 08:00。</div>
+        </details>
+        <details>
+          <summary>评审对配乐与原声的比例有要求吗？</summary>
+          <div class="ans">有。画面与原声同步的段落需占全片三成以上。11 月 5 日之前这条写的是「建议三成」，之后改为硬性口径，不足三成按声画脱节处理。</div>
+        </details>
+        <details>
+          <summary>同一作品可以同时在混剪组与PMV组投稿吗？</summary>
+          <div class="ans">不可以。同一素材同一剪辑的成片只允许进入一个赛组。重复投稿会在复核时取消其中一组资格，已结算的历史稿件不受影响。</div>
+        </details>
+      </section>
+
+      <!-- 用户评论 -->
+      <section class="panel" id="comments">
+        <div class="panel-head">
+          <div>
+            <span class="kicker">VOICES</span>
+            <h2>选手评论：被扣分的那些刀</h2>
+          </div>
+          <span class="hint">来自答疑帖与选手群</span>
+        </div>
+        <div class="comment">
+          <div class="avatar" style="background:#e8452b">铁</div>
+          <div><span class="who"><b>@铁轨边的猫</b>11-07 22:10</span><p>《霓虹落幕》那 21 刀能拿到 +1，说实话我自己也意外。剪的时候只在 00:52 数了三下鼓，其余是跟着灯牌闪的节奏走的，复核记录能对上，算运气成分少一点。</p></div>
+        </div>
+        <div class="comment">
+          <div class="avatar" style="background:#1d2a42">半</div>
+          <div><span class="who"><b>@半截胶片</b>11-07 22:35</span><p>《逆光三秒》被扣 4 分我认。弦乐长音里塞 23 刀，回看确实浮。但同一份说明里没写清楚「音乐事件」怎么算，鼓点算，弦乐渐强算不算？希望下一赛段给个例子。</p></div>
+        </div>
+        <div class="comment">
+          <div class="avatar" style="background:#1f7a5c">莫</div>
+          <div><span class="who"><b>@莫尔斯的键</b>11-07 23:02</span><p>删掉 00:33 的两次闪白，复核分从 83 到 86。那两刀正好落在台词尾音上，「你听我说完」被切成了「你听我说」，这种损失剪的时候完全没注意。</p></div>
+        </div>
+        <div class="comment">
+          <div class="avatar" style="background:#6b7586">山</div>
+          <div><span class="who"><b>@山口组的旧账</b>11-08 00:18</span><p>11 月 6 日那批 38 条，4 分钟内一条，评审真能逐帧看？我不太信。与其纠结规则怎么写，不如把前 15 秒做得没得挑，评审的注意力大概率只在前半段。</p></div>
+        </div>
+        <div class="comment">
+          <div class="avatar" style="background:#a1650a">半</div>
+          <div><span class="who"><b>@半个月亮</b>11-08 07:40</span><p>《走廊尽头》的长镜头切分，我做的时候是先定四段情绪，再回填切点。这套方法在第 44 赛段拿了 88，第 46 赛段的夜景素材反而不好用，灯牌本身就够碎，再切就散了。</p></div>
+        </div>
+        <div class="comment">
+          <div class="avatar" style="background:#3c4656">纸</div>
+          <div><span class="who"><b>@纸飞机不落地</b>11-08 08:55</span><p>版权清单是真的麻烦。我用的片段来自一部 2009 年的电影，曲目是授权库里的，但片源名称要写到发行方，填错两回才过。建议官方把常见片源的规范写法列一张表。</p></div>
+        </div>
+      </section>
+
+      <!-- 相关资讯 -->
+      <section class="panel" id="news">
+        <div class="panel-head">
+          <div>
+            <span class="kicker">NEWS</span>
+            <h2>相关资讯：赛段结果与规则动向</h2>
+          </div>
+          <span class="hint">近 30 天</span>
+        </div>
+        <div class="news-grid">
+          <div class="news"><time>11-05</time><b>第 45 赛段「人物特写」结果公布</b><p>PMV 组入选 14 条、混剪组 11 条，入选率 3.1%，为近十个赛段最低。</p></div>
+          <div class="news"><time>11-04</time><b>赛事答疑帖集中回应配乐版权</b><p>37 条提问中 14 条与版权标注相关，答复要求片源、区间、曲目三项齐全。</p></div>
+          <div class="news"><time>11-03</time><b>周末长素材包开放申领</b><p>时长 8 分钟以上，含 6 段夜景空镜与 3 首授权配乐，需在赛题页单独申请。</p></div>
+          <div class="news"><time>10-29</time><b>第 43 赛段「对白留白」复盘</b><p>入选作品中平均原声占比 41%，高于赛制要求的三成，说明高分段留白处理更保守。</p></div>
+        </div>
+      </section>
+
+      <!-- 口碑榜 -->
+      <section class="panel" id="rank">
+        <div class="panel-head">
+          <div>
+            <span class="kicker">RANK</span>
+            <h2>评审复核榜：第 46 赛段分数变动</h2>
+          </div>
+          <span class="hint">仅列复核有变动的作品</span>
+        </div>
+        <ol class="rank">
+          <li><span class="n">1</span><span class="t">《霓虹落幕》· 夜景快切与鼓点对位</span><span class="s">82 → 86</span></li>
+          <li><span class="n">2</span><span class="t">《莫尔斯的键》· 车窗第八帧原声交叠</span><span class="s">83 → 86</span></li>
+          <li><span class="n">3</span><span class="t">《走廊尽头》· 长镜头切分四节奏</span><span class="s">88</span></li>
+          <li><span class="n">4</span><span class="t">《巷口的第七次回头》· 人物特写快切</span><span class="s">85 → 83</span></li>
+          <li><span class="n">5</span><span class="t">《逆光三秒》· 弦乐段落密集闪切</span><span class="s">84 → 80</span></li>
+        </ol>
+      </section>
+
+      <!-- 相关推荐 -->
+      <section class="panel" id="reco">
+        <div class="panel-head">
+          <div>
+            <span class="kicker">RELATED</span>
+            <h2>相关推荐</h2>
+          </div>
+        </div>
+        <div class="reco">
+          <a href="/#deep">转场密度与音乐事件对照表</a>
+          <a href="/#guide">128 BPM 剪辑点速查</a>
+          <a href="/#latest">第 46 赛段素材包 v1.3 变更</a>
+          <a href="/#comments">闪白吃掉台词的补救方法</a>
+          <a href="/#faq">原声三成比例怎么数</a>
+          <a href="/#channels">夜景空镜混剪频道</a>
+          <a href="/#news">第 45 赛段入选名单</a>
+          <a href="/#rank">复核分开高的五条作品</a>
+        </div>
+      </section>
+
+    </div>
+
+    <aside class="side-col" aria-label="侧栏导航与补充信息">
+      <nav class="side-box" aria-label="页内栏目导航">
+        <h2>栏目导航</h2>
+        <ul class="side-nav" id="sideNav">
+          <li><a href="/#overview">赛程概览<span class="cnt">46</span></a></li>
+          <li><a href="/#featured">本周精选<span class="cnt">3</span></a></li>
+          <li><a href="/#latest">最新更新<span class="cnt">7</span></a></li>
+          <li><a href="/#channels">分类入口<span class="cnt">10</span></a></li>
+          <li><a href="/#deep">深度解析<span class="cnt">1</span></a></li>
+          <li><a href="/#guide">参赛指南<span class="cnt">5</span></a></li>
+          <li><a href="/#faq">常见问题<span class="cnt">6</span></a></li>
+          <li><a href="/#comments">选手评论<span class="cnt">6</span></a></li>
+          <li><a href="/#news">相关资讯<span class="cnt">4</span></a></li>
+          <li><a href="/#rank">复核榜<span class="cnt">5</span></a></li>
+          <li><a href="/#reco">相关推荐<span class="cnt">8</span></a></li>
+        </ul>
+      </nav>
+      <div class="side-box">
+        <h2>今日赛段数据</h2>
+        <div class="side-mini">
+          <dl>
+            <dt>赛段</dt><dd>第 46 赛段</dd>
+            <dt>赛题</dt><dd>夜景快切</dd>
+            <dt>参考 BPM</dt><dd>128</dd>
+            <dt>提交截止</dt><dd>11-08 08:00</dd>
+            <dt>剩余席位</dt><dd>6</dd>
+            <dt>素材包</dt><dd>v1.3</dd>
+          </dl>
+        </div>
+      </div>
+    </aside>
+  </div>
+</main>
+
+<footer class="site-foot">
+  <div class="wrap">
+    <div class="foot-grid">
+      <div class="foot-brand">
+        <a class="brand" href="/#top">
+          <svg viewBox="0 0 40 40" aria-hidden="true">
+            <rect width="40" height="40" rx="9" fill="#1d2a42"></rect>
+            <rect x="8" y="11" width="24" height="3.4" rx="1.4" fill="#e8452b"></rect>
+            <rect x="8" y="18" width="15" height="3.4" rx="1.4" fill="#f4f5f7"></rect>
+            <rect x="8" y="25" width="24" height="3.4" rx="1.4" fill="#8494ab"></rect>
+            <circle cx="30.5" cy="19.5" r="3.2" fill="#e8452b"></circle>
+          </svg>
+          <span><span class="brand-name">每日大赛 混剪pmv</span></span>
+        </a>
+        <p>把赛题、复核分与评审措辞的变动放在一起看，方便选手决定下一刀往哪里落。</p>
+      </div>
+      <div class="foot-col">
+        <h3>赛程栏目</h3>
+        <ul>
+          <li><a href="/#overview">赛程概览</a></li>
+          <li><a href="/#latest">最新更新</a></li>
+          <li><a href="/#featured">本周精选</a></li>
+          <li><a href="/#rank">评审复核榜</a></li>
+        </ul>
+      </div>
+      <div class="foot-col">
+        <h3>创作参考</h3>
+        <ul>
+          <li><a href="/#guide">参赛指南</a></li>
+          <li><a href="/#deep">深度解析</a></li>
+          <li><a href="/#channels">分类入口</a></li>
+          <li><a href="/#faq">常见问题</a></li>
+        </ul>
+      </div>
+      <div class="foot-col">
+        <h3>选手互动</h3>
+        <ul>
+          <li><a href="/#comments">选手评论</a></li>
+          <li><a href="/#news">相关资讯</a></li>
+          <li><a href="/#reco">相关推荐</a></li>
+          <li><a href="/#top">回到顶部</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="foot-note">
+      <p>页面内容含示例数据：作品名称、作者昵称、评分与素材包版本均为演示用，赛事组织、授权与版权信息以官方发布为准。页脚更新时间 2026-11-08 09:30，对应正文可核对项为第 46 赛段入围池第二批上线与提交入口分组建制。</p>
+      <p>© 2026 每日大赛 混剪pmv 内容整理 · 保留所有权利</p>
+    </div>
+  </div>
+</footer>
+
+<button class="to-top" id="toTop" type="button" aria-label="回到顶部">↑</button>
+
+<script>
+(function(){
+  var menuBtn = document.getElementById('menuBtn');
+  var headNav = document.getElementById('headNav');
+  if (menuBtn && headNav) {
+    menuBtn.addEventListener('click', function(){
+      var open = headNav.classList.toggle('open');
+      menuBtn.setAttribute('aria-expanded', open ? 'true' : 'false');
+    });
+    headNav.addEventListener('click', function(e){
+      if (e.target.tagName === 'A' && window.innerWidth <= 980) {
+        headNav.classList.remove('open');
+        menuBtn.setAttribute('aria-expanded','false');
+      }
+    });
+  }
+
+  /* 侧栏滚动高亮 */
+  var sideLinks = Array.prototype.slice.call(document.querySelectorAll('#sideNav a'));
+  var targets = sideLinks.map(function(a){
+    var id = a.getAttribute('href').split('#')[1];
+    return document.getElementById(id);
+  }).filter(Boolean);
+  function setActive(){
+    var scrollY = window.scrollY + 160;
+    var current = -1;
+    for (var i = 0; i < targets.length; i++) {
+      if (targets[i].offsetTop <= scrollY) current = i;
+    }
+    sideLinks.forEach(function(a, i){ a.classList.toggle('active', i === current); });
+  }
+  window.addEventListener('scroll', setActive, {passive:true});
+  setActive();
+
+  /* 回到顶部 */
+  var toTop = document.getElementById('toTop');
+  window.addEventListener('scroll', function(){
+    toTop.classList.toggle('show', window.scrollY > 600);
+  }, {passive:true});
+  toTop.addEventListener('click', function(){
+    window.scrollTo({top:0, behavior:'smooth'});
+  });
+
+  /* 本地查找 */
+  var q = document.getElementById('q');
+  var box = document.getElementById('searchResult');
+  var index = [];
+  document.querySelectorAll('section[id] h2, section[id] h3, [id] .cat, [id] summary, .news b, .reco a, .rank .t').forEach(function(el){
+    var text = (el.textContent || '').replace(/\s+/g,' ').trim();
+    if (!text) return;
+    var host = el.closest('section[id]') || el.closest('[id]');
+    var id = host ? host.id : '';
+    index.push({text:text, id:id});
+  });
+  function escapeHtml(s){
+    return s.replace(/[&<>"']/g, function(c){
+      return ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'})[c];
+    });
+  }
+  function doSearch(){
+    var term = q.value.trim().toLowerCase();
+    if (!term) { box.classList.remove('open'); box.innerHTML=''; return; }
+    var hits = index.filter(function(item){ return item.text.toLowerCase().indexOf(term) !== -1; });
+    if (!hits.length) {
+      box.innerHTML = '<div class="empty">没有找到匹配条目，试试「夜景」「原声」「复核」。</div>';
+    } else {
+      var seen = {};
+      box.innerHTML = hits.slice(0,12).map(function(h){
+        var key = h.id + '|' + h.text;
+        if (seen[key]) return '';
+        seen[key] = 1;
+        return '<a href="/#' + h.id + '">' + escapeHtml(h.text) + '</a>';
+      }).join('');
+    }
+    box.classList.add('open');
+  }
+  q.addEventListener('input', doSearch);
+  q.addEventListener('keydown', function(e){
+    if (e.key === 'Escape') { q.value=''; box.classList.remove('open'); q.blur(); }
+    if (e.key === 'Enter') {
+      var first = box.querySelector('a');
+      if (first) { window.location.hash = first.getAttribute('href'); box.classList.remove('open'); }
+    }
+  });
+  document.addEventListener('click', function(e){
+    if (!box.contains(e.target) && e.target !== q) box.classList.remove('open');
+  });
+})();
+</script>
+</body>
+  </html>
